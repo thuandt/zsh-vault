@@ -19,7 +19,7 @@ typeset -gA Plugins
 Plugins[ZSH_VAULT_DIR]="${0:h}"
 
 #compdef vault
-complete -o nospace -C $(asdf which vault) vault
+complete -o nospace -C vault vault
 
 # Use alternate vim marks [[[ and ]]] as the original ones can
 # confuse nested substitutions, e.g.: ${${${VAR}}}
